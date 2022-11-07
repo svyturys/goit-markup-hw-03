@@ -286,27 +286,28 @@ header {
 
 .staff {
   display: flex;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .staff >.item {
   width: calc((100% - 90px) / 4);
   /* margin-right: 30px; */
   text-align: center;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 .staff .item + .item {
   margin-left: 30px;
-  outline: 1px solid orchid;
+  /* outline: 1px solid orchid; */
 }
 
-/* .staff-info:not(:last-child) {
-  margin-right: 0;
-} */
+
 
 .staff-info {
   padding: 30px 70px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 94px;
 }
 
 .person {
@@ -320,7 +321,7 @@ header {
 
   margin-bottom: 10px;
   margin-top: 0;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .role {
@@ -332,7 +333,7 @@ header {
   color: var(--primary-text-color);
   
   margin: 0;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 /* footer */
