@@ -84,7 +84,6 @@ header {
 
 .logo.white {
   display: inline-block;
-  margin-top: 60px;
 
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -94,8 +93,6 @@ header {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #fff;
-
-  
 }
 
 .logo-web {
@@ -178,11 +175,13 @@ header {
   background-color: var(--footer-background-color);
   color: #fff;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-top: 200px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -210,7 +209,6 @@ header {
 
   padding: 10px 32px;
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 
 .hero-btn:hover,
@@ -218,10 +216,18 @@ header {
   background-color: #188ce8;
 }
 /* AIM LIST */
-.aim {
-  display: flex;
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.aim {
+  display: flex;
+
+}
+
+.aim >.item {
+  flex-basis: 270px;
 }
 
 .aim >.item:not(:last-child) {
@@ -258,9 +264,15 @@ header {
   /* outline: 1px solid teal; */
 }
 
+/* Section tasks */
+
+.section-tasks {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 .illustration {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .illustration .image:not(:last-child) {
@@ -274,7 +286,6 @@ header {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -304,10 +315,9 @@ header {
 
 
 .staff-info {
-  padding: 30px 70px;
+  padding: 30px 0;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 94px;
 }
 
 .person {
@@ -339,11 +349,19 @@ header {
 /* footer */
 .footer {
   background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
   font-style: normal;
+  margin-top: 20px;
 }
+
+.address .item {
+  margin-top: 9px;
+}
+
 
 .footer-contacts-list {
   text-decoration: none;
@@ -353,12 +371,6 @@ header {
   color: rgba(255, 255, 255, 0.6);
 
   display: inline-block;
-  margin-top: 9px;
-
-}
-
-.footer-contacts-list.end {
-  margin-bottom: 60px;
 }
 
 .footer-contacts-list:hover,
@@ -374,7 +386,6 @@ header {
   color: var(--secondary-text-color);
 
   display: inline-block;
-  margin-top: 20px;
   /* margin-bottom: 9px; */
 
 }
@@ -385,10 +396,15 @@ header {
 }
 
 /* PORTFOLIO */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* buttons */
 .buttons {
   display: flex;
-  padding-top: 94px;
+  
   padding-bottom: 50px;
   justify-content: center;
 }
@@ -442,12 +458,15 @@ header {
 }
 
 .menu .item:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
+  margin-bottom: 0;
 } 
 
 .card-text {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   border: 1px solid var(--card-border);
+  border-top: none;
 }
 
 .project-name {
