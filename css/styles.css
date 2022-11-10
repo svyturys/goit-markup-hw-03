@@ -405,7 +405,7 @@ header {
 .buttons {
   display: flex;
   
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
